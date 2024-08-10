@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Ma chérie,</strong>
+                        <p>
+                            Depuis le jour où nos chemins se sont croisés, tu n’as cessé de remplir ma vie de douceur et de bonheur. Même si la distance nous sépare, sache que mon cœur est toujours près de toi, battant à l'unisson avec le tien. Il n'y a pas un instant où je ne pense à toi, à ton sourire, à ton regard, et à tout ce que tu représentes pour moi.
+                        </p>
+                        <p>
+                            Je veux que tu saches, aujourd’hui et à chaque instant, que tu es la personne la plus précieuse à mes yeux. Peu importe les kilomètres qui nous séparent, je suis toujours là pour toi. Quand tu te sens seule, que le monde te semble lourd et que les doutes t’envahissent, pense à cette lettre et rappelle-toi que tu n’es jamais seule. Je suis avec toi, en pensée, en cœur, et en âme.
+                        </p>
+                        <p>
+                            Tu peux toujours compter sur moi, peu importe la situation. Je suis ici pour te soutenir, t’encourager, et te rappeler combien tu es extraordinaire. Même dans les moments les plus sombres, je veux être cette lumière qui guide ton chemin, cette chaleur qui réchauffe ton cœur.
+                        </p>
+                        <p>
+                            Je t’aime plus que les mots ne peuvent le dire, et je veux que tu le ressentes à chaque fois que tu penses à moi. Nous ferons face à la distance ensemble, main dans la main, jusqu'au jour où nous pourrons enfin être réunis sans plus jamais nous séparer.
+                        </p>
+                        <p>
+                            Alors, ma chérie, chaque fois que tu te sentiras seule ou que tu auras besoin de réconfort, relis ces mots et imagine mes bras autour de toi, te serrant fort, t’offrant tout l’amour et la sécurité que tu mérites.
+                        </p>
+                        <p>
+                            Je t’aime, aujourd’hui, demain, et pour toujours.
+                        </p>
+                        <p>
+                            Avec tout mon amour,
+                        </p>
+                        <p>
+                            Ariel <br><br><br>
+                        </p><br><br><br><br>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
